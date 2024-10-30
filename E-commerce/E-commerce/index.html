@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <script type="text/javascript" src="script/main.js"></script>
+    <style>
+    .w3-sidebar a {font-family: "Roboto", sans-serif}
+    body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+    </style>
+  </head>
+  <body>
+    <div class="navbar-container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="#">Logo</a>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+          ☰
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <button class="close-btn" id="close-btn">✕</button>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li class="dropdown">
+            <a href="#">Hair Care<span class="arrow down" id="dropdown-toggle1"></span></a>
+            <ul class="dropdown-menu" id="dropdown-menu1">
+              <li><a href="#">Shampoo</a></li>
+              <li><a href="#">Conditioner</a></li>
+              <li><a href="#">Service 3</a></li>
+            </ul>
+            <a href="#">Skin Care<span class="arrow down" id="dropdown-toggle2"></span></a>
+            <ul class="dropdown-menu" id="dropdown-menu2">
+              <li><a href="#">Service 1</a></li>
+              <li><a href="#">Service 2</a></li>
+              <li><a href="#">Service 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="search-bar">
+          <input type="text" placeholder="Search...">
+        </div>
+      </div>
+    </div>
+    <div class="gallery-container">
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_5terre.jpg">
+            <img src="https://bulbsandroots.com/wp-content/uploads/2020/03/multiskill20_1a1.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_forest.jpg">
+            <img src="https://bulbsandroots.com/wp-content/uploads/2020/03/multiskill20_1a1.jpg" alt="Forest" width="600" height="400">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_lights.jpg">
+            <img src="https://bulbsandroots.com/wp-content/uploads/2020/03/multiskill20_1a1.jpg" alt="Northern Lights" width="600" height="400">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_mountains.jpg">
+            <img src="https://bulbsandroots.com/wp-content/uploads/2020/03/multiskill20_1a1.jpg" alt="Mountains" width="600" height="400">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+      </div>
+    </div>
+    <script>
+    // JavaScript to handle menu toggle and dropdown menu
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    const closeBtn = document.getElementById('close-btn');
+    const dropdownToggle1 = document.getElementById('dropdown-toggle1');
+    const dropdownMenu1 = document.getElementById('dropdown-menu1');
+    const dropdownToggle2 = document.getElementById('dropdown-toggle2');
+    const dropdownMenu2 = document.getElementById('dropdown-menu2');
+    menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    });
+    closeBtn.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+    });
+    dropdownToggle1.addEventListener('click', (e) => {
+    e.preventDefault();
+    dropdownMenu1.classList.toggle('show');
+    });
+    dropdownToggle2.addEventListener('click', (e) => {
+    e.preventDefault();
+    dropdownMenu2.classList.toggle('show');
+    });
+    </script>
+  </body>
+</html>
+</html>
